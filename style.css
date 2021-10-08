@@ -1,0 +1,145 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carousel-container {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.carousel-container .leftButton,
+.carousel-container .rightButton {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #16191b;
+  top: 0;
+  z-index: 3;
+}
+.carousel-container .leftButton {
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+}
+.carousel-container .rightButton {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+.carousel {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.carousel img {
+  min-width: 300px;
+  max-width: 700px;
+  height: 100%;
+  background-size: cover;
+
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+.carousel img:hover {
+  transform: scale(1.2);
+}
+
+.products-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.product-card {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 1s;
+  flex-direction: column;
+}
+.product-card .product-img {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card .product-img img {
+  height: 200px;
+  width: 100%;
+}
+
+.product-card .product-info .product-name {
+  color: rgb(0, 126, 245);
+  font-size: 16px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+  margin: auto;
+}
+.card-order {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.cart-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.cart-modal.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+.cart {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.cart h2 {
+  text-align: center;
+}
+.free {
+  height: 100px;
+}

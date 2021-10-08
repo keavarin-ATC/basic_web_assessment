@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Web Assessment</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>SampleSite</h1>
+      <div class="cart-icon">
+        <i class="fa fa-shopping-cart" style="font-size: 34px"></i>
+        <span class="item-total">0</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="free"></div>
+
+    <div class="main">
+      <div class="carousel-container">
+        <div class="carousel"></div>
+        <a class="leftButton" onclick="sliderLeft()"><</a>
+        <a class="rightButton" onclick="sliderRight()">></a>
+      </div>
+    </div>
+
+    <div class="free"></div>
+    <div>
+      <div class="products-container">
+        
+      </div>
+    </div>
+
+    <div class="cart-modal">
+      
+      <div class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-content"> 
+        <ul id="myList">
+        </ul>
+       </div> 
+       <div><button id="close-modal">Close</button> <button id="clear-modal">Clear</button></div>
+      </div>
+      </div>
+     
+    </div>
+
+    <p>Copyright</p>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
